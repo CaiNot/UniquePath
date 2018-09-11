@@ -22,7 +22,7 @@ int uniquePaths(int m, int n) {
 int uniquePathsWithObstacles(vector<vector<int>> &obstacleGrid) {
     int n = obstacleGrid.size();
     int m = obstacleGrid[0].size();
-    int ans[n][m] = {0};
+    int ans[n][m];
     bool flag = false;
     for (int i = 0; i < m; i++) {
         if (flag || obstacleGrid[0][i] == 1) {
